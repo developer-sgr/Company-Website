@@ -1,0 +1,142 @@
+﻿<div id="navbar-collapse-grid" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        @if (HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString().ToLower() == "home")
+        {
+            <li class="active"><a href="@Url.Action("Index", "Home")"><i class="fa fa-home"></i> Home</a></li>
+        }
+        else
+        {
+            <li><a href="@Url.Action("Index", "Home")"><i class="fa fa-home"></i> Home</a></li>
+        }
+        @if (HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString().ToLower() == "services")
+        {
+            <li class="dropdown yamm-fw dropdown-position active" id="liServices">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle"> <i class="fa fa-gear"></i> Services<b class="caret"></b></a>
+                <ul class="dropdown-menu  dropdown-width" id="services-dropdownMenu">
+                    <li class="grid-demo">
+                        <div class="dropdown-content">
+                            <a href="@Url.Action("Index", "Services") ">Software Development</a><br />
+                            <a href="@Url.Action("Index", "Services")?id=#dvSoftwareTesting">Software Testing</a><br />
+                            <a href="@Url.Action("Index", "Services")?id=#dvProjectManagement">Project Management</a><br />
+                            <a href="@Url.Action("Index", "Services")?id=#dvUIUXDesigning">UI/UX Designing</a><br />
+                            <a href="@Url.Action("Index", "Services")?id=#dvInfrastructureManagement">Infrastructure Management</a><br />
+                            <a href="@Url.Action("Index", "Services")?id=#dvSeo">SEO</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        }
+        else
+        {
+            <li class="dropdown yamm-fw dropdown-position " id="liServices">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle"> <i class="fa fa-gear"></i> Services<b class="caret"></b></a>
+                <ul class="dropdown-menu  dropdown-width" id="services-dropdownMenu">
+                    <li class="grid-demo">
+                        <div class="dropdown-content">
+                            <a href="@Url.Action("Index", "Services") ">Software Development</a><br />
+                            <a href="@Url.Action("Index", "Services")?id=#dvSoftwareTesting">Software Testing</a><br />
+                            <a href="@Url.Action("Index", "Services")?id=#dvProjectManagement">Project Management</a><br />
+                            <a href="@Url.Action("Index", "Services")?id=#dvUIUXDesigning">UI/UX Designing</a><br />
+                            <a href="@Url.Action("Index", "Services")?id=#dvInfrastructureManagement">Infrastructure Management</a><br />
+                            <a href="@Url.Action("Index", "Services")?id=#dvSeo">SEO</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        }
+        @if (HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString().ToLower() == "solutions")
+        {
+            <li class="dropdown yamm-fw dropdown-position" id="liSolutions">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-puzzle-piece"></i> Solutions<b class="caret"></b></a>
+                <ul class="dropdown-menu dropdown-width" id="solution-dropdownMenu">
+                    <li class="grid-demo">
+                        <div class="dropdown-content">
+                            <a href="@Url.Action("Index", "Solutions")">Content Management System</a><br />
+                            <a href="@Url.Action("Index", "Solutions")?id=#dvECommerce">E Commerce</a><br />
+                            <a href="@Url.Action("Index", "Solutions")?id=#dvCloudInfrastructure">Cloud Infrastructure</a><br />
+                            <a href="@Url.Action("Index", "Solutions")?id=#dvCrm">CRM</a><br />
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        }
+        else
+        {
+            <li class="dropdown yamm-fw dropdown-position" id="liSolutions">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-puzzle-piece"></i> Solutions<b class="caret"></b></a>
+                <ul class="dropdown-menu dropdown-width" id="solution-dropdownMenu">
+                    <li class="grid-demo">
+                        <div class="dropdown-content">
+                            <a href="@Url.Action("Index", "Solutions")">Content Management System</a><br />
+                            <a href="@Url.Action("Index", "Solutions")?id=#dvECommerce">E Commerce</a><br />
+                            <a href="@Url.Action("Index", "Solutions")?id=#dvCloudInfrastructure">Cloud Infrastructure</a><br />
+                            <a href="@Url.Action("Index", "Solutions")?id=#dvCrm">CRM</a><br />
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        }
+
+        @if (HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString().ToLower() == "Technologies")
+        {
+            <li class="dropdown yamm-fw dropdown-position active" id="liTechnologies">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-cogs"></i> Technologies<b class="caret"></b></a>
+                <ul class="dropdown-menu dropdown-width" id="technologiesDropown">
+                    <li class="grid-demo">
+                        <div class="dropdown-content">
+                            <a href="@Url.Action("Index","Technologies")">Dot Net</a><br />
+                            <a href="@Url.Action("Index","Technologies")?id=#dvJava">Java</a><br />
+                            <a href="@Url.Action("Index","Technologies")?id=#dvPHP">PHP</a><br />
+                            <a href="@Url.Action("Index","Technologies")?id=#dvCloud">Cloud</a><br />
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        }
+        else
+        {
+            <li class="dropdown yamm-fw dropdown-position" id="liTechnologies">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-cogs"></i> Technologies<b class="caret"></b></a>
+                <ul class="dropdown-menu dropdown-width" id="technologiesDropown">
+                    <li class="grid-demo">
+                        <div class="dropdown-content">
+                            <a href="@Url.Action("Index","Technologies")">Dot Net</a><br />
+                            <a href="@Url.Action("Index","Technologies")?id=#dvJava">Java</a><br />
+                            <a href="@Url.Action("Index","Technologies")?id=#dvPHP">PHP</a><br />
+                            <a href="@Url.Action("Index","Technologies")?id=#dvCloud">Cloud</a><br />
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        }
+        @if (HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString().ToLower() == "AboutUs")
+        {
+            <li class="active"><a href="@Url.Action("Index","AboutUs")"><i class="fa fa-users"></i> About Us</a></li>
+
+        }
+        else
+        {
+            <li><a href="@Url.Action("Index","AboutUs")"><i class="fa fa-users"></i> About Us</a></li>
+        }
+
+        @if (HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString().ToLower() == "contact")
+        {
+            <li class="active"><a href="@Url.Action("Index","Contact")"><i class="fa fa-envelope"></i> Contact Us</a></li>
+
+        }
+        else
+        {
+            <li><a href="@Url.Action("Index","Contact")"><i class="fa fa-envelope"></i> Contact Us</a></li>
+        }
+
+    </ul>
+</div>
+<script>
+    $(document).ready(function () {
+        $('li.dropdown').hover(function () {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+        }, function () {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(100);
+        });
+    });
+</script>

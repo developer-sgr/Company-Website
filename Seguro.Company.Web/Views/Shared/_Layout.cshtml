@@ -1,0 +1,82 @@
+﻿@{
+    Layout = "";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="~/@Url.Content("images/favicon.png")">
+    <title>Seguro Soft</title>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for this template -->
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/utils")
+    
+</head>
+<!-- NAVBAR
+================================================== -->
+<body class="@ViewBag.PageCssClass">
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-inverse navbar-static-top navbar-default yamm">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-grid" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+                            <img src="@Url.Content("~/images/logo.png")" alt="Seguro Soft" />
+                        </a>
+                    </div>
+                    @Html.Partial("_Navigation")
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    @if (HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString().ToLower() != "home")
+    {
+
+        @Html.Partial("_BreadCrumb")
+    }
+
+    @RenderBody()
+
+    <footer>
+            <div class="container">
+                <div class="copyright">
+                    <p>Copyright &copy; @DateTime.Now.Year SeguroSoft. All rights reserved.</p>
+                </div>
+                <div class="fnav">
+                    <ul>
+                        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                        <li><a href="@Url.Action("Index", "Services")">Services</a></li>
+                        <li><a href="@Url.Action("Index", "Solutions")">Solutions</a></li>
+                        <li><a href="@Url.Action("Index", "Technologies")">Technologies</a></li>
+                        <li><a href="@Url.Action("Index", "AboutUs")">About Us</a></li>
+                        <li><a href="@Url.Action("Index", "Contact")">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
+

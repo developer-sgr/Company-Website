@@ -1,0 +1,22 @@
+﻿@{
+    //ViewBag.Title = "ThankYou";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content-section med-sec-p" >
+    <div class="tq-margin">
+        <div  class="container">
+            <h4 class="font-style">Thank you for submitting the request. We will get back to you shortly.</h4>
+            <hr />
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function () {
+        $('.tq-margin').height($(window).height()/2 + 70);
+        //var halfsc = $(window).height();
+        //$('.tq-margin').css('margin-bottom', halfsc );
+    });
+</script>
+
