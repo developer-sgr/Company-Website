@@ -5,20 +5,23 @@
 }
 
 <section class="content-section med-sec-p">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Office Address</h3>
-                <hr />
-                <h4>Seguro Soft Technologies Pvt. Ltd.</h4>
-                3rd Floor,
-                <br />Plot # 27/A, Jayabheri Enclave, Phase-2,
-                <br />Behind Radisson Hotel, Gachibowli,
-                <br />Hyderabad, Telangana, India – 500 032
-            </div>
-            <div class="col-md-8">
-                <div id="map"></div>
-            </div>
+    <div class="tq-margin">
+        <div class="container">
+            <h3>Office Address</h3>
+            <hr />
+            <h4>Seguro Soft Technologies Pvt. Ltd.</h4>
+            3rd Floor,
+            <br />Plot # 27/A, Jayabheri Enclave, Phase-2,
+            <br />Behind Radisson Hotel, Gachibowli,
+            <br />Hyderabad, Telangana, India – 500 032
         </div>
-</div>
+    </div>
 </section>
+
+<script>
+    $(document).ready(function () {
+        $('.tq-margin').height($(window).height()/2 + 70);
+        //var halfsc = $(window).height();
+        //$('.tq-margin').css('margin-bottom', halfsc );
+    });
+</script>
