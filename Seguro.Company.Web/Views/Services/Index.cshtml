@@ -2,15 +2,7 @@
     ViewBag.Title = "Services";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<style>
-    /*ul li::before {
-        font-weight: bold;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-        font-size: 15px;
-    }*/
-</style>
+
 <section class="content-section med-sec-p">
     <div class="container" id="dvSoftDev">
         <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 thumbimg pull-right">
@@ -27,42 +19,46 @@
             <p>
                 Our top-notch software development services will help clients to become more competitive and standalone in the current marketplace.  We offer all kind of software development services to improve client’s productivity thereby helping them to earn greater ROI.
                 <br /><br />
+                @*Based upon the client’s requirement, we choose the software development life cycle from various life cycles such as waterfall model, iterative model, and other life cycles.*@
+                @*<br /><br />
+                We at Seguro Soft, leave no stone unturned to make our customers happy. We continuously take your inputs and requirements to produce outstanding software. From startups to MNC’s, our experienced and the dedicated team will help you in building your software by providing a complete solution to your needs.*@
+
+                @*<button class="btn btn-lg btn-primary" id="btnSoftDevReadMore">Read More</button>*@
+            </p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mg-top" id="softDevHide">
+            <p>
                 Based upon the client’s requirement, we choose the software development life cycle from various life cycles such as waterfall model, iterative model, and other life cycles.
                 <br /><br />
-                <button class="btn btn-lg btn-primary" id="btnSoftDevReadMore">Read More</button>
-            </p>
-        </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="softDevHide">
-            <p>
                 We at Seguro Soft, leave no stone unturned to make our customers happy. We continuously take your inputs and requirements to produce outstanding software. From startups to MNC’s, our experienced and the dedicated team will help you in building your software by providing a complete solution to your needs.
-            </p>
-            <h5><strong>Benefits of Availing our Services </strong></h5>
-            <p> Three factors constrain software projects:</p>
-                <ul class="li-fontSize">
-                    <li>Time</li>
-                    <li>Budget and</li>
-                    <li>Quality</li>
-                </ul>
-            <p>
-                We design and develop the software by keeping the central focus on our clients. Seguro Soft is your one-stop destination to build your software with higher ROI.
-                With availing the Seguro Soft software development services, we provide you with
-            </p>
+             </p>
+        <h5><strong>Benefits of Availing our Services </strong></h5>
+        <p> Three factors constrain software projects:</p>
             <ul class="li-fontSize">
-                <li>Tailor-made software development solutions to match your requirements</li>
-                <li>On time delivery</li>
-                <li> Personalized solutions</li>
-                <li>Relentless maintenance and support</li>
-                <li>Compatible and reliable software</li>
+                <li>Time</li>
+                <li>Budget and</li>
+                <li>Quality</li>
             </ul>
+        <p>
+            We design and develop the software by keeping the central focus on our clients. Seguro Soft is your one-stop destination to build your software with higher ROI.
+            With availing the Seguro Soft software development services, we provide you with
+        </p>
+        <ul class="li-fontSize">
+            <li>Tailor-made software development solutions to match your requirements</li>
+            <li>On time delivery</li>
+            <li> Personalized solutions</li>
+            <li>Relentless maintenance and support</li>
+            <li>Compatible and reliable software</li>
+        </ul>
 
-            <a href="#" id="softDevlink"><input type="button" class="btn btn-lg btn-primary" id="btnSoftDevShowLess" value="Show Less"></a>
-        </div>
+        @*<a href="#" id="softDevlink"><input type="button" class="btn btn-lg btn-primary" id="btnSoftDevShowLess" value="Show Less"></a>*@
+</div>
 
     </div>
 </section>
 
 <section class="content-section med-sec-p">
-    <div class="container" id="dvSoftwareTesting">
+    <div class="container" id="software-testing">
         <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 thumbimg">
             <img src="images/nativeos-dev.png" class="img-alignment"/>
         </div>
@@ -82,7 +78,7 @@
 
             </p>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mg-top">
             <h5><strong>Benefits of Availing Our Services </strong></h5>
             <p>
                 Our Software testing services are designed to simplify your work ensuring that your customers are provided with uninterrupted experience. We have a talented team of experts working rigorously to discover the bugs and errors and correct them before your user finds an issue.
@@ -104,7 +100,7 @@
 </section>
 
 <section class="content-section med-sec-p ">
-    <div class="container" id="dvProjectManagement">
+    <div class="container" id="project-management">
         <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 thumbimg pull-right">
             <img src="~/images/project-management.jpg" class="img-alignment"/>
         </div>
@@ -117,15 +113,21 @@
             </p>
             <h5><strong>Why Choose Us?</strong></h5>
             <p>
-                Project Management plays a crucial part, and if not handled properly, it could lead to terrible results. Which is why you must always trust the best company that can handle any type of project for you. We at Seguro Soft believe in delivering high-quality services to our clients which is why our enthusiastic team ensures that every technical detail regarding the project is taken care of to evaluate the overall success of the project. We also have our experienced Project manager working on the project analysis and estimation as well.
-                <br />
+                Project Management plays a crucial part, and if not handled properly, it could lead to terrible results. Which is why you must always trust the best company that can handle any type of project for you. We at Seguro Soft believe in delivering high-quality services to our clients which is why our enthusiastic team ensures that every technical detail regarding the project is taken care of 
+             </p>
+            @*<h5><strong>Benefits of Availing our Services </strong></h5>
+            <p>
+                Seguro Soft focuses on understanding your business requirement and rendering to you the best quality services in less time while making sure that you are delivered with the errorless services. Our custom-made services include:
+            </p>*@
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dv-mg-top">
+            <p>
+                to evaluate the overall success of the project. We also have our experienced Project manager working on the project analysis and estimation as well.
             </p>
             <h5><strong>Benefits of Availing our Services </strong></h5>
             <p>
                 Seguro Soft focuses on understanding your business requirement and rendering to you the best quality services in less time while making sure that you are delivered with the errorless services. Our custom-made services include:
             </p>
-        </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <ul class="li-fontSize">
                 <li>Our team focuses on maintaining the coordination of the team </li>
                 <li>Estimation of the project requisites and schedule creation </li>
@@ -134,14 +136,14 @@
                 <li> Project management over far off locations</li>
                 <li> Secure and transparent mode of communication to deliver the best quality project to you </li>
             </ul>
-           
+
         </div>
     </div>
 </section>
 
 
 <section class="content-section med-sec-p ">
-    <div class="container" id="dvUIUXDesigning">
+    <div class="container" id="ui-ux-design">
         <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 thumbimg">
             <img src="images/nativeos-dev.png" />
         </div>
@@ -150,23 +152,38 @@
             <p>
                 No matter how powerful the app you have developed. You will be able to get the attention of the users only when your app or website has the great UI design. Seguro Soft is the best UI/UX designing company which specialise in developing the handcrafted UI/UX designs to meet the expectations of the clients closely.  We find unique solutions to provide the best UI/UX designing services to our clients. Since UI/UX is one of the core services offered by Seguro Soft Company, clients rely on us for creating innovative apps and software with highly engaging and user-friendly designs. We enable organizations to transform their idea into a successful business quickly.
             </p>
-            <h5><strong>Why Choose Us?</strong></h5>
-            <p>
-                <dl>
-                    <dt>Services from the Professionals :</dt> The team of dedicated professionals provides all our services. They understand the requirements of the clients to deliver specific services to them. Our experts ensure to give full attention to our clients to provide better UI design for improved ROI.
-
-                    <dt>Instant Solutions : </dt> Our experts follow the quick response approach. This enables our clients to get instant solutions to the problems occurring with the design of their apps. We create workflows to meet the best design needs of our clients.
-                </dl>
-            </p>
+            <h5 class="header"><strong>Why Choose Us?</strong></h5>
+          
+            <dl>
+                <dt>Services from the Professionals :</dt>
+                <dd>
+                    The team of dedicated professionals provides all our services. They understand the requirements of the clients to deliver specific services to them. Our experts ensure to give full attention to our clients to provide better UI design for improved ROI.
+                </dd>
+                <dt>Instant Solutions : </dt>
+                <dd>
+                    Our experts follow the quick response approach. This enables our clients to get instant solutions to the problems occurring with the design of their apps. We create workflows to meet the best design needs of our clients.
+                </dd>
+                <dt>Diverse Experience :</dt>
+               
+            </dl>
+         
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <p>
-                <dl>
-                    <dt>Diverse Experience :</dt> We have several years of expertise in UI/UX design. We have worked to create attractive and user-friendly UI/UX designs for apps in various domains including e-Learning, IT, finance, science, real estate, health, fashion, lifestyle and more.
-
-                    <dt>Focus on UI/UX Designing Process : </dt> Our experts focus on app development process on every stage. This helps in making the best UI/UX design of the app with the highly improved usability experience to the users.
-                </dl>
-            </p>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dv-mg-top">
+           
+            <dl>
+                <dd>
+                    We have several years of expertise in UI/UX design. We have worked to create attractive and user-friendly UI/UX designs for apps in various domains including e-Learning, IT, finance, science, real estate, health, fashion, lifestyle and more.
+                </dd>
+                @*<dt>Diverse Experience :</dt>
+        <dd>
+            We have several years of expertise in UI/UX design. We have worked to create attractive and user-friendly UI/UX designs for apps in various domains including e-Learning, IT, finance, science, real estate, health, fashion, lifestyle and more.
+        </dd>*@
+                <dt>Focus on UI/UX Designing Process : </dt>
+                <dd>
+                    Our experts focus on app development process on every stage. This helps in making the best UI/UX design of the app with the highly improved usability experience to the users.
+                </dd>
+            </dl>
+          
             <h5><strong>Benefits of Availing our Services </strong></h5>
             <ul class="li-fontSize">
                 <li>Meet the deadline </li>
@@ -182,7 +199,7 @@
 </section>
 
 <section class="content-section med-sec-p ">
-    <div class="container" id="dvInfrastructureManagement">
+    <div class="container" id="infrastructure-management">
         <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 thumbimg pull-right">
             <img src="images/nativeos-dev.png" />
         </div>
@@ -200,7 +217,7 @@
 
 
 <section class="content-section med-sec-p ">
-    <div class="container" id="dvSeo">
+    <div class="container" id="seo">
         <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 thumbimg">
             <img src="images/mobile-testing.png" />
         </div>
@@ -241,18 +258,18 @@
 
 <script>
     $(document).ready(function () {
-        $('#softDevHide').hide();
-        $('#btnSoftDevShowLess').hide();
-        $('#btnSoftDevReadMore').click(function () {
-            $('#softDevHide').slideToggle('slow');
-            $('#btnSoftDevShowLess').show();
-            $('#btnSoftDevReadMore').hide();
-        });
-        $('#btnSoftDevShowLess').click(function () {
-            $('#softDevHide').hide();
-            $('#btnSoftDevShowLess').hide();
-            $('#btnSoftDevReadMore').show();
-            $('#softDevlink').prop("href", "#dvSoftDev");
-        });
+        //$('#softDevHide').hide();
+        //$('#btnSoftDevShowLess').hide();
+        //$('#btnSoftDevReadMore').click(function () {
+        //    $('#softDevHide').slideToggle('slow');
+        //    $('#btnSoftDevShowLess').show();
+        //    $('#btnSoftDevReadMore').hide();
+        //});
+        //$('#btnSoftDevShowLess').click(function () {
+        //    $('#softDevHide').hide();
+        //    $('#btnSoftDevShowLess').hide();
+        //    $('#btnSoftDevReadMore').show();
+        //    $('#softDevlink').prop("href", "#dvSoftDev");
+        //});
     });
 </script>

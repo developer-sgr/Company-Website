@@ -84,12 +84,19 @@
                         <div class="col-md-2">
                         </div>
                         <div class="col-md-10">
-                            <div class="g-recaptcha" data-type="image" data-sitekey="@System.Web.Configuration.WebConfigurationManager.AppSettings["RecaptchaPublicKey"]" data-expired-callback="recaptchaExpired">
+                            <div class="g-recaptcha" data-type="image" data-sitekey="@System.Web.Configuration.WebConfigurationManager.AppSettings["RecaptchaPublicKey"]" data-expired-callback="recaptchaExpired" data-valmsg-for="Catcpa required cs" data-valmsg-replace="true">
+                            </div>
+                                <div class="rc-anchor rc-anchor-normal rc-anchor-light">
+                                    <div id="recaptcha-accessible-status" class="rc-anchor-aria-status" aria-hidden="true">
+                                    </div>
+                                    <div class="rc-anchor-error-msg-container" style="display:none">
+                                        <span class="rc-anchor-error-msg" aria-hidden="true">Captcha expired</span>
+                                    </div>
+                                </div>
                            
-                            </div>
-                            <div class="rc-anchor-error-msg-container" style="display:none">
-                                <span class="rc-anchor-error-msg"></span>
-                            </div>
+                            @*<div class="rc-anchor-error-msg-container" style="display:none">
+                                <span class="rc-anchor-error-msg">Captcha</span>
+                            </div>*@
                             @Html.ValidationMessage("Captcha")
                         </div>
                     </div>
@@ -99,7 +106,7 @@
                         </div>
                         
                     </div>
-                }
+                  }
             </div>
         </div>
     </div>
@@ -123,7 +130,8 @@
 
     function recaptchaExpired() {
         alert("Captcha Expired");
-        $(".rc-anchor-error-msg").text("captcha");
+        $(".rc-anchor-error-msg").html("Captcha");
+        grecaptcha.reset();
     }
   
 </script>
