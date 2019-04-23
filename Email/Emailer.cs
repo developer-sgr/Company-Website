@@ -29,7 +29,7 @@ namespace LS.Email
         private Emailer()
         {
             Message = new MailMessage();
-            client = new SmtpClient();
+            client = new SmtpClient("smtp.Office365.com",587);
         }
 
         #endregion

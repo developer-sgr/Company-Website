@@ -1446,7 +1446,7 @@ dt {
     line-height: 1.42857143
 }
 dt {
-    font-weight: 700
+    font-weight: 600
 }
 dd {
     margin-left: 0
@@ -1599,7 +1599,7 @@ pre code {
 }
 @media (min-width: 1200px) {
     .container {
-        width:1113px
+        width:1024px
     }
 }
 .container-fluid {
@@ -3660,6 +3660,7 @@ tbody.collapse.in {
     outline: 0
 }
 .dropdown-menu {
+    font-weight: 500;
     position: absolute;
     top: 41px;
     left: 0;
@@ -3667,7 +3668,7 @@ tbody.collapse.in {
     display: none;
     float: left;
     min-width: 160px;
-    padding:0;
+    padding: 0;
     margin: 0;
     font-size: 14px;
     text-align: left;
@@ -3676,9 +3677,10 @@ tbody.collapse.in {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border: 1px solid #ccc;
-    border: 1px solid rgba(0, 0, 0, .15);   
+    border: 1px solid rgba(0, 0, 0, .15);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    font-family: 'Source Sans Pro,sans-serif';
 }
 .dropdown-menu.pull-right {
     right: 0;
@@ -4116,13 +4118,13 @@ textarea.input-group-sm>.input-group-btn>.btn {
     position: relative;
     display: block
 }
-.nav>li>a {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-	text-transform:uppercase;	
-	font-family:'helveticaneuemedium';
-}
+    .nav > li > a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        font-family: 'Source Sans Pro,sans-serif';
+    }
 .nav>li>a:focus,
 .nav>li>a:hover {
     text-decoration: none;

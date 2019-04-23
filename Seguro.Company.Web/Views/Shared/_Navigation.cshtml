@@ -1,4 +1,12 @@
-﻿<div id="navbar-collapse-grid" class="navbar-collapse collapse">
+﻿<style>
+    /*li{
+        height:30px;
+    }
+    .color{
+        background-color:white;
+    }*/
+</style>
+<div id="navbar-collapse-grid" class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
         @if (HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString().ToLower() == "home")
         {
@@ -20,11 +28,13 @@
                             <a href="@Url.Action("Index", "Services")?id=#dvProjectManagement">Project Management</a><br />
                             <a href="@Url.Action("Index", "Services")?id=#dvUIUXDesigning">UI/UX Designing</a><br />
                             <a href="@Url.Action("Index", "Services")?id=#dvInfrastructureManagement">Infrastructure Management</a><br />
-                            <a href="@Url.Action("Index", "Services")?id=#dvSeo">SEO</a>
+                            <a href="@Url.Action("Index", "Services")/#dvSeo">SEO</a>
                         </div>
                     </li>
                 </ul>
             </li>
+           
+
         }
         else
         {
@@ -38,7 +48,7 @@
                             <a href="@Url.Action("Index", "Services")?id=#dvProjectManagement">Project Management</a><br />
                             <a href="@Url.Action("Index", "Services")?id=#dvUIUXDesigning">UI/UX Designing</a><br />
                             <a href="@Url.Action("Index", "Services")?id=#dvInfrastructureManagement">Infrastructure Management</a><br />
-                            <a href="@Url.Action("Index", "Services")?id=#dvSeo">SEO</a>
+                            <a href="@Url.Action("Index", "Services")/#dvSeo">SEO</a>
                         </div>
                     </li>
                 </ul>
@@ -52,7 +62,7 @@
                     <li class="grid-demo">
                         <div class="dropdown-content">
                             <a href="@Url.Action("Index", "Solutions")">Content Management System</a><br />
-                            <a href="@Url.Action("Index", "Solutions")?id=#dvECommerce">E Commerce</a><br />
+                            <a href="@Url.Action("Index", "Solutions")?id=#dvEcommerce">E Commerce</a><br />
                             <a href="@Url.Action("Index", "Solutions")?id=#dvCloudInfrastructure">Cloud Infrastructure</a><br />
                             <a href="@Url.Action("Index", "Solutions")?id=#dvCrm">CRM</a><br />
                         </div>
@@ -68,7 +78,7 @@
                     <li class="grid-demo">
                         <div class="dropdown-content">
                             <a href="@Url.Action("Index", "Solutions")">Content Management System</a><br />
-                            <a href="@Url.Action("Index", "Solutions")?id=#dvECommerce">E Commerce</a><br />
+                            <a href="@Url.Action("Index", "Solutions")?id=#dvEcommerce">E Commerce</a><br />
                             <a href="@Url.Action("Index", "Solutions")?id=#dvCloudInfrastructure">Cloud Infrastructure</a><br />
                             <a href="@Url.Action("Index", "Solutions")?id=#dvCrm">CRM</a><br />
                         </div>
@@ -133,10 +143,10 @@
 </div>
 <script>
     $(document).ready(function () {
-        $('li.dropdown').hover(function () {
-            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
-        }, function () {
-            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(100);
-        });
+        //$('li.dropdown').hover(function () {    
+        //    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+        //}, function () {
+        //    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(100);
+        //});
     });
 </script>

@@ -41,7 +41,8 @@
 body {
     color: #5a5a5a;
     background: #555555;
-    height:100%;
+    height: 100%;
+    font-size: 13px;
 }
 a:hover{text-decoration:none;}
 p{color:#555555;font-size:13px;font-family: 'helveticaneuemedium';}
@@ -197,7 +198,7 @@ margin-top:-5px !important;
 
 .banner-services ul.b1-sul > li:last-child,
 .banner-services ul.b2-sul > li:last-child,
-.banner-services ul.b3-sul > li:last-child{margin:0;float:right;}
+.banner-services ul.b3-sul > li:last-child{margin:0;}
 
 .lSSlideOuter,
 .lSSlideOuter .lightSlider > li{position:relative;}
@@ -207,8 +208,10 @@ margin-top:-5px !important;
 .lSSlideOuter .lightSlider > li .imgsection{float:right;}
 .lSSlideOuter .pager-holder{width:980px;margin:0 auto;position:relative;z-index:15;}
 .lSSlideOuter .lSPager.lSpg {position:absolute;right:0;width:auto;bottom:120px;}
-	
-footer{padding:0 0 10px;}
+
+footer {
+    padding: 8px 0 8px;
+}
 footer .copyright{
 	float:left;
 }
@@ -226,6 +229,7 @@ footer .fnav ul > li{
 	border-left:1px solid #fff;
 	padding-left:10px;
 	line-height:7px;
+    font-family:'Source Sans Pro,sans-serif';
 }
 footer .fnav ul > li:first-child{border:none;}
 footer .fnav ul > li a{
@@ -241,7 +245,7 @@ footer .fnav ul > li a:hover {
     position: relative;
     background: url(../images/subpage-header-bg.jpg) repeat-y top center;
     margin: 0;
-    padding: 26px 0;
+    padding: 10px 0;
 }
 
 .breadcrumb-holder{
@@ -322,8 +326,8 @@ ul.arrowul > li i{margin-right:10px;}
     color:red;
 }
 .dropdown-width {
-    /*min-width: 250px !important;*/
-    width:192% !important;
+    min-width: 250px !important;
+    /*width:192% !important;*/
     background-color: #313131 !important;
 }
 .dropdown-position{
@@ -365,4 +369,25 @@ ul.arrowul > li i{margin-right:10px;}
 }
 .tq-margin {
   margin-bottom:0px;
+}
+.img-alignment {
+    max-height: 100%;
+    max-width: 100% ;
+    margin-top: 10px;
+    margin-bottom: 10px ;
+}
+.btn-radius{
+    border-radius:0px;
+}
+
+.li-fontSize{
+    font-size:13px;
+}
+
+ .breadcrumb-align {
+    margin-right: 0px ;
+    margin-left: 0px ;
+ }
+.pd-btm{
+    padding-bottom:20px;
 }

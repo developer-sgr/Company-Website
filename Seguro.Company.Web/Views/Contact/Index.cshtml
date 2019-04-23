@@ -17,7 +17,7 @@
 <section class="content-section med-sec-p">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 pd-btm">
                 <h3>Office Address</h3>
                 <hr />
                 <h4>Seguro Soft Technologies Pvt. Ltd.</h4>
@@ -26,7 +26,7 @@
                 <br />Behind Radisson Hotel, Gachibowli,
                 <br />Hyderabad, Telangana, India – 500 032
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 margin-align">
                 <div id="map"></div>
             </div>
         </div>
@@ -84,14 +84,18 @@
                         <div class="col-md-2">
                         </div>
                         <div class="col-md-10">
-                            <div class="g-recaptcha" data-type="image" data-sitekey="@System.Web.Configuration.WebConfigurationManager.AppSettings["RecaptchaPublicKey"]">
+                            <div class="g-recaptcha" data-type="image" data-sitekey="@System.Web.Configuration.WebConfigurationManager.AppSettings["RecaptchaPublicKey"]" data-expired-callback="recaptchaExpired">
+                           
                             </div>
-                           @Html.ValidationMessage("Captcha")
+                            <div class="rc-anchor-error-msg-container" style="display:none">
+                                <span class="rc-anchor-error-msg"></span>
+                            </div>
+                            @Html.ValidationMessage("Captcha")
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
-                            <input type="submit" class="btn btn-primary" value="Submit" />
+                            <input type="submit" class="btn btn-primary btn-md btn-radius" value="Submit" />
                         </div>
                         
                     </div>
@@ -117,6 +121,10 @@
         });
     }
 
+    function recaptchaExpired() {
+        alert("Captcha Expired");
+        $(".rc-anchor-error-msg").text("captcha");
+    }
   
 </script>
 <script async defer

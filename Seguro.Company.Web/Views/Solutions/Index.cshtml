@@ -1,4 +1,7 @@
-﻿@{
+﻿@using Seguro.Company.Web.Models
+@model Seguro.Company.Web.Models.CommonModel
+
+@{
     ViewBag.Title = "Solutions";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -24,30 +27,30 @@
             </p>
 
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-20" id="CmsHideContent">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="CmsHideContent">
             <p>
                 Seguro Soft is your partner in providing a content management system that is beneficial for evaluating your company’s needs and objectives with respect to the publishing of content.
                 Whatever your business requirement might be a blog or e-commerce, we evaluate and provide you a suitable content management system that best matches your interest. Not only that in case your business currently uses an analytics or ERP system, we can look at integration for the same.
             </p>
             <h5 id="CmsHideContent"><strong>Key benefits of our technology </strong></h5>
-            <p>
-                <i class="fa fa-circle fa-icon-size"></i> Easy to use  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Intuitive User experience <br />
-                <i class="fa fa-circle fa-icon-size"></i> Ability to build workflows  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Integrate with multiple content types and systems  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Provide customized solution  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Provide suitable solution irrespective of industry  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Ability to create creative content that can lead your business  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Search Engine Optimization  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Group and Individual user functionality  <br />
-            </p>
+            <ul class="li-fontSize">
+                <li>Easy to use  </li>
+                <li> Intuitive User experience </li>
+                <li>Ability to build workflows </li>
+                <li> Integrate with multiple content types and systems</li>
+                <li>Provide customized solution </li>
+                <li> Provide suitable solution irrespective of industry </li>
+                <li> Ability to create creative content that can lead your business </li>
+                <li> Search Engine Optimization</li>
+                <li> Group and Individual user functionality </li>
+            </ul>
         </div>
     </div>
 </section>
 
 
 <section class="content-section med-sec-p">
-    <div class="container" id="dvECommerce">
+    <div class="container" id="dvEcommerce">
         <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12  thumbimg">
             <img src="images/nativeos-dev.png" />
         </div>
@@ -61,15 +64,14 @@
                 Our e-commerce websites are an impeccable solution for retailers, wholesalers and any resellers who want to maximize their revenue by selling their products and services on the internet.
             </p>
             <h5><strong>Our E-commerce website solution has </strong></h5>
-            <p>
-                <i class="fa fa-circle fa-icon-size"></i> Authoritative SEO and Search marketing  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Customer designed and developed  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Industry-leading conversion rates and speeds  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Excellent 3rd party integrations  <br /><br />
-                <button class="btn btn-lg btn-primary" id="btnEcommerceReadMore">Read More</button>
-            </p>
+            <ul class="li-fontSize">
+                <li>Authoritative SEO and Search marketing </li>
+                <li> Customer designed and developed </li>
+                <li> Industry-leading conversion rates and speeds</li>
+                <li> Excellent 3rd party integrations</li>
+            </ul>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-20" id="EcommerceHide">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="EcommerceHide">
             <h5><strong>Why Choose Us?</strong></h5>
             <p>
                 <dl>
@@ -98,16 +100,16 @@
                 </dl>
             </p>
             <h5><strong>Other benefits</strong></h5>
-            <p>
-                <i class="fa fa-circle fa-icon-size"></i> Robust Product Features & Capabilities  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Manage the content at scale <br />
-                <i class="fa fa-circle fa-icon-size"></i> Superior Marketing Integrations <br />
-                <i class="fa fa-circle fa-icon-size"></i> Multiple Shipping Options <br />
-                <i class="fa fa-circle fa-icon-size"></i> Multiple Payment Methods  <br />
-            </p>
+            <ul class="li-fontSize">
+                <li> Robust Product Features & Capabilities </li>
+                <li> Manage the content at scale</li>
+                <li> Superior Marketing Integrations </li>
+                <li> Multiple Shipping Options</li>
+                <li> Multiple Payment Methods  </li>
+            </ul>
             <a href="#" id="Ecommercelink"><input type="button" class="btn btn-lg btn-primary" id="btnEcommerceShowLess" value="Show Less"></a>
         </div>
-       
+
     </div>
 </section>
 
@@ -134,14 +136,14 @@
             </p>
         </div>
 
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-20" id="CIHide">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="CIHide">
 
             <h5><strong>Why Choose Us?</strong></h5>
             <p>
                 <dl>
                     <dt>International Clientele : </dt>
                     Seguro Soft has a strong experience of deploying and running cloud infrastructure services across platforms and sectors. We have established our credentials with more than 1000 enterprises.
-                
+
                     <dt>99% uptime SLA : </dt>
                     Thanks to our state-of-art data center, and disaster recovery services, we guarantee 99.99% server uptime SLA.
 
@@ -170,7 +172,7 @@
             </p>
             <a href="#" id="CIlink"><input type="button" class="col-offset-5 btn btn-lg btn-primary" id="btnCIShowLess" value="Show Less"></a>
         </div>
-        
+
     </div>
 </section>
 
@@ -201,7 +203,7 @@
                 <button class="btn btn-lg btn-primary" id="btnCrmReadMore">Read More</button>
             </p>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-20" id="CrmHide">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="CrmHide">
             <p>
                 <dl>
                     <dt>Plug ‘n’ Play :</dt> We understand that no two businesses can be the same and hence our solution is customizable at the click of a button to suit your needs and preferences.
@@ -220,56 +222,47 @@
                 </dl>
                 <dl>
                     <dt>Sales Management</dt>
-                    <dd>
-                        <i class="fa fa-circle fa-icon-size"></i> Lead Routing & Opportunity Management
-                        <br />
-                        <i class="fa fa-circle fa-icon-size"></i> Lead & Opportunity Analytics
-                        <br />
-                        <i class="fa fa-circle fa-icon-size"></i> Customer Info & History
-                        <br />
-                        <i class="fa fa-circle fa-icon-size"></i> Contact Management
-                        <br />
-                        <i class="fa fa-circle fa-icon-size"></i> Accurate forecasting
-                    </dd>
                 </dl>
+                <ul class="li-fontSize">
+                    <li> Lead Routing & Opportunity Management </li>
+                    <li> Lead & Opportunity Analytics</li>
+                    <li> Customer Info & History</li>
+                    <li> Contact Management</li>
+                    <li> Accurate forecasting</li>
+                </ul>
+
+             
                 <dl>
                     <dt> Marketing Automation</dt>
-                    <dd>
-                        <i class="fa fa-circle fa-icon-size"></i> Marketing Strategy
-                        <br />
-                        <i class="fa fa-circle fa-icon-size"></i> Analyze Trend & Behavior
-                        <br />
-                        <i class="fa fa-circle fa-icon-size"></i> Business Intelligence
-                        <br />
-                        <i class="fa fa-circle fa-icon-size"></i> Campaign Management
-                    </dd>
                 </dl>
+                <ul class="li-fontSize">
+                    <li>Marketing Strategy </li>
+                    <li>Analyze Trend & Behavior </li>
+                    <li> Business Intelligence</li>
+                    <li> Campaign Management</li>
+                </ul>
+
                 <dl>
                     <dt>Support & Community Management</dt>
-                    <dd>
-                        <i class="fa fa-circle fa-icon-size"></i> Support Ticketing
-                        <br />
-                        <i class="fa fa-circle fa-icon-size"></i> 3rd Party Integration
-                        <br />
-                        <i class="fa fa-circle fa-icon-size"></i> Call Center & VoIP Integration
-                    </dd>
                 </dl>
+                <ul class="li-fontSize">
+                    <li>Support Ticketing </li>
+                    <li>3rd Party Integration </li>
+                    <li> Call Center & VoIP Integration</li>
+                </ul>
                 <dl>
                     <dt>Team Collaboration</dt>
-                    <dd>
-                        <i class="fa fa-circle fa-icon-size"></i> Boost Productivity
-                        <br />
-                        <i class="fa fa-circle fa-icon-size"></i> In-sync coordination
-                        <br />
-                        <i class="fa fa-circle fa-icon-size"></i> Outstanding customer experience
-                        <br />
-                        <i class="fa fa-circle fa-icon-size"></i> Effective Data Management
-                    </dd>
                 </dl>
+                <ul class="li-fontSize">
+                    <li> Boost Productivity</li>
+                    <li>In-sync coordination</li>
+                    <li>Outstanding customer experience</li>
+                    <li>Effective Data Management</li>
+                </ul>
             </p>
             <a href="#" id="Crmlink"><input type="button" class="btn btn-lg btn-primary" id="btnCrmShowLess" value="Show Less"></a>
         </div>
-        
+
     </div>
 </section>
 @*<section class="gray-section med-sec-p nobpadding">
@@ -289,6 +282,26 @@
     </section>*@
 <script>
     $(document).ready(function () {
+
+        var url = "@Model.UrlKeyword";
+        if (url == 'Ecommerce') {
+            //$(window).scrollTop($('#dvEcommerce').position().top - 20);
+            //$('div#' + dvEcommerce)[0].scrollIntoView();
+            //$('#dvEcommerce').scrollIntoView(true);
+            //$("#dvEcommerce").scrollIntoView({
+            //    duration: true,
+            //    easing: 'easeOutExpo',
+            //    complete: $.noop(),
+            //    step: $.noop(),
+            //    queue: false,
+            //    specialEasing: null
+            //});
+            //document.getElementById("view" + dvEcommerce).scrollIntoView({ behavior: "smooth" });
+            //window.location.hash = "view" + dvEcommerce;
+            //var elmnt = document.getElementById("dvEcommerce");
+            //elmnt.scrollIntoView();
+            $("#dvEcommerce").scrollIntoView(true);
+        }
 
         $("#EcommerceHide").hide();
         $('#btnEcommerceShowLess').hide();

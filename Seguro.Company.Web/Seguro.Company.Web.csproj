@@ -190,6 +190,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CommonModel.cs" />
     <Compile Include="Models\ContactusModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -230,6 +231,7 @@
     <Content Include="images\mobile-testing.png" />
     <Content Include="images\nativeos-dev.png" />
     <Content Include="images\nop-icon.png" />
+    <Content Include="images\project-management.jpg" />
     <Content Include="images\slider\banner1-bg.jpg" />
     <Content Include="images\slider\banner1-img.png" />
     <Content Include="images\slider\banner2-bg.jpg" />

@@ -2,7 +2,15 @@
     ViewBag.Title = "Services";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<style>
+    /*ul li::before {
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        font-size: 15px;
+    }*/
+</style>
 <section class="content-section med-sec-p">
     <div class="container" id="dvSoftDev">
         <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 thumbimg pull-right">
@@ -19,43 +27,35 @@
             <p>
                 Our top-notch software development services will help clients to become more competitive and standalone in the current marketplace.  We offer all kind of software development services to improve client’s productivity thereby helping them to earn greater ROI.
                 <br /><br />
+                Based upon the client’s requirement, we choose the software development life cycle from various life cycles such as waterfall model, iterative model, and other life cycles.
+                <br /><br />
                 <button class="btn btn-lg btn-primary" id="btnSoftDevReadMore">Read More</button>
             </p>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-20" id="SoftDevHide">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="softDevHide">
             <p>
-                Based upon the client’s requirement, we choose the software development life cycle from various life cycles such as waterfall model, iterative model, and other life cycles.
-                <br /><br />
                 We at Seguro Soft, leave no stone unturned to make our customers happy. We continuously take your inputs and requirements to produce outstanding software. From startups to MNC’s, our experienced and the dedicated team will help you in building your software by providing a complete solution to your needs.
             </p>
             <h5><strong>Benefits of Availing our Services </strong></h5>
+            <p> Three factors constrain software projects:</p>
+                <ul class="li-fontSize">
+                    <li>Time</li>
+                    <li>Budget and</li>
+                    <li>Quality</li>
+                </ul>
             <p>
-                Three factors constrain software projects:
-                <br />
-                <i class="fa fa-circle fa-icon-size"></i>    Time
-                <br />
-                <i class="fa fa-circle fa-icon-size"></i>    Budget and
-                <br />
-                <i class="fa fa-circle fa-icon-size"></i>    Quality
-                <br />
-                <br />
                 We design and develop the software by keeping the central focus on our clients. Seguro Soft is your one-stop destination to build your software with higher ROI.
                 With availing the Seguro Soft software development services, we provide you with
-                <br />
-                <i class="fa fa-circle fa-icon-size"></i>    Tailor-made software development solutions to match your requirements
-                <br />
-                <i class="fa fa-circle fa-icon-size"></i>    On time delivery
-                <br />
-                <i class="fa fa-circle fa-icon-size"></i>    Quality software at a compelling price
-                <br />
-                <i class="fa fa-circle fa-icon-size"></i>    Personalized solutions
-                <br />
-                <i class="fa fa-circle fa-icon-size"></i>    Relentless maintenance and support
-                <br />
-                <i class="fa fa-circle fa-icon-size"></i>    Compatible and reliable software
-
             </p>
-            <a href="#" id="SoftDevlink"><input type="button" class="btn btn-lg btn-primary" id="btnSoftDevShowLess" value="Show Less"></a>
+            <ul class="li-fontSize">
+                <li>Tailor-made software development solutions to match your requirements</li>
+                <li>On time delivery</li>
+                <li> Personalized solutions</li>
+                <li>Relentless maintenance and support</li>
+                <li>Compatible and reliable software</li>
+            </ul>
+
+            <a href="#" id="softDevlink"><input type="button" class="btn btn-lg btn-primary" id="btnSoftDevShowLess" value="Show Less"></a>
         </div>
 
     </div>
@@ -64,7 +64,7 @@
 <section class="content-section med-sec-p">
     <div class="container" id="dvSoftwareTesting">
         <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 thumbimg">
-            <img src="images/nativeos-dev.png" />
+            <img src="images/nativeos-dev.png" class="img-alignment"/>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-7 col-xs-12">
             <h3>Software Testing</h3>
@@ -82,7 +82,7 @@
 
             </p>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-20">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h5><strong>Benefits of Availing Our Services </strong></h5>
             <p>
                 Our Software testing services are designed to simplify your work ensuring that your customers are provided with uninterrupted experience. We have a talented team of experts working rigorously to discover the bugs and errors and correct them before your user finds an issue.
@@ -91,14 +91,14 @@
             </p>
 
             <h5><strong>Our Custom-made services include </strong></h5>
-            <p>
-                <i class="fa fa-circle fa-icon-size"></i>    End-to-End testing process <br />
-                <i class="fa fa-circle fa-icon-size"></i>    Round the Clock Expert Support <br />
-                <i class="fa fa-circle fa-icon-size"></i>    Transparency in the business and control <br />
-                <i class="fa fa-circle fa-icon-size"></i>    Highly experienced and result driven QA engineers <br />
-                <i class="fa fa-circle fa-icon-size"></i>    High-Quality service delivery <br />
-                <i class="fa fa-circle fa-icon-size"></i>    Scalable process while ensuring your position boost in the Market
-            </p>
+            <ul class="li-fontSize">
+                <li>End-to-End testing process </li>
+                <li> Round the Clock Expert Support </li>
+                <li>Transparency in the business and control</li>
+                <li>Highly experienced and result driven QA engineers </li>
+                <li>High-Quality service delivery </li>
+                <li> Scalable process while ensuring your position boost in the Market</li>
+            </ul>
         </div>
     </div>
 </section>
@@ -106,7 +106,7 @@
 <section class="content-section med-sec-p ">
     <div class="container" id="dvProjectManagement">
         <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 thumbimg pull-right">
-            <img src="images/mobile-testing.png" />
+            <img src="~/images/project-management.jpg" class="img-alignment"/>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-7 col-xs-12">
             <h3>Project Management</h3>
@@ -125,15 +125,16 @@
                 Seguro Soft focuses on understanding your business requirement and rendering to you the best quality services in less time while making sure that you are delivered with the errorless services. Our custom-made services include:
             </p>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-20">
-            <p>
-                <i class="fa fa-circle fa-icon-size"></i> Our team focuses on maintaining the coordination of the team <br />
-                <i class="fa fa-circle fa-icon-size"></i> Estimation of the project requisites and schedule creation <br />
-                <i class="fa fa-circle fa-icon-size"></i> Planning of the Software development cycle <br />
-                <i class="fa fa-circle fa-icon-size"></i> Timely execution of the plan and ensuring there is no error occurrence <br />
-                <i class="fa fa-circle fa-icon-size"></i> Project management over far off locations <br />
-                <i class="fa fa-circle fa-icon-size"></i> Secure and transparent mode of communication to deliver the best quality project to you
-            </p>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <ul class="li-fontSize">
+                <li>Our team focuses on maintaining the coordination of the team </li>
+                <li>Estimation of the project requisites and schedule creation </li>
+                <li> Planning of the Software development cycle</li>
+                <li> Timely execution of the plan and ensuring there is no error occurrence</li>
+                <li> Project management over far off locations</li>
+                <li> Secure and transparent mode of communication to deliver the best quality project to you </li>
+            </ul>
+           
         </div>
     </div>
 </section>
@@ -158,7 +159,7 @@
                 </dl>
             </p>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-20">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <p>
                 <dl>
                     <dt>Diverse Experience :</dt> We have several years of expertise in UI/UX design. We have worked to create attractive and user-friendly UI/UX designs for apps in various domains including e-Learning, IT, finance, science, real estate, health, fashion, lifestyle and more.
@@ -167,16 +168,15 @@
                 </dl>
             </p>
             <h5><strong>Benefits of Availing our Services </strong></h5>
-            <p>
-                <i class="fa fa-circle fa-icon-size"></i> Meet the deadline <br />
-                <i class="fa fa-circle fa-icon-size"></i> The highly competitive pricing structure <br />
-                <i class="fa fa-circle fa-icon-size"></i> Round the clock customer support services <br />
-                <i class="fa fa-circle fa-icon-size"></i> Timely execution of the plan and ensuring there is no error occurrence <br />
-                <i class="fa fa-circle fa-icon-size"></i> Fully personalized solutions <br />
-                <i class="fa fa-circle fa-icon-size"></i> UI/UX designs
-                <br /><br />
-                We keep in mind the goals of the clients for creating attractive UI/UX designs for the apps. Our experts follow the right approach for app designing and completing all our projects.
-            </p>
+            <ul class="li-fontSize">
+                <li>Meet the deadline </li>
+                <li> The highly competitive pricing structure</li>
+                <li>  Round the clock customer support services</li>
+                <li>  Timely execution of the plan and ensuring there is no error occurrence</li>
+                <li> Fully personalized solutions</li>
+                <li> UI/UX designs</li>
+            </ul>
+           
         </div>
     </div>
 </section>
@@ -220,39 +220,39 @@
 
             </p>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-20">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <p>
                 Our service also leads you to more measurable results. With reporting and an ability to see the keyword you rank for, you have the ability to analyses the benefit that our solution provides you.  Reliability and continual monitoring at our end ensure that you don’t have to worry about consistency.
             </p>
             <h5><strong>Key Benefits That You Get Upon Availing Our Services </strong></h5>
-            <p>
-                <i class="fa fa-circle fa-icon-size"></i> Best in class product  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Superior technology  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Increased Traffic <br />
-                <i class="fa fa-circle fa-icon-size"></i> Improved Rankings  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Higher Sales/Leads  <br />
-                <i class="fa fa-circle fa-icon-size"></i> More Brand Exposure  <br />
-                <i class="fa fa-circle fa-icon-size"></i> Higher credibility   <br />
-                <i class="fa fa-circle fa-icon-size"></i> Staying ahead of the competition
-            </p>
+            <ul>
+                <li>Best in class product </li>
+                <li> Superior technology</li>
+                <li>Increased Traffic </li>
+                <li> Improved Rankings</li>
+                <li> Higher Sales/Leads</li>
+                <li>More Brand Exposure </li>
+                <li>Higher credibility    </li>
+                <li> Staying ahead of the competition </li>
+            </ul>
         </div>
     </div>
 </section>
 
 <script>
     $(document).ready(function () {
-        $('#SoftDevHide').hide();
+        $('#softDevHide').hide();
         $('#btnSoftDevShowLess').hide();
         $('#btnSoftDevReadMore').click(function () {
-            $('#SoftDevHide').slideToggle('slow');
+            $('#softDevHide').slideToggle('slow');
             $('#btnSoftDevShowLess').show();
             $('#btnSoftDevReadMore').hide();
         });
         $('#btnSoftDevShowLess').click(function () {
-            $('#SoftDevHide').hide();
+            $('#softDevHide').hide();
             $('#btnSoftDevShowLess').hide();
             $('#btnSoftDevReadMore').show();
-            $('#SoftDevlink').prop("href", "#dvSoftDev");
+            $('#softDevlink').prop("href", "#dvSoftDev");
         });
     });
 </script>
