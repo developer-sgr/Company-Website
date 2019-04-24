@@ -4,7 +4,7 @@
 }
 
 <section class="content-section med-sec-p">
-    <div class="container" id="dvSoftDev">
+    <div class="container" id="software-development">
         <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 thumbimg pull-right">
             <img src="images/html5-dev.png" />
         </div>
@@ -19,14 +19,14 @@
             <p>
                 Our top-notch software development services will help clients to become more competitive and standalone in the current marketplace.  We offer all kind of software development services to improve client’s productivity thereby helping them to earn greater ROI.
                 <br /><br />
-                @*Based upon the client’s requirement, we choose the software development life cycle from various life cycles such as waterfall model, iterative model, and other life cycles.*@
-                @*<br /><br />
+                @*Based upon the client’s requirement, we choose the software development life cycle from various life cycles such as waterfall model, iterative model, and other life cycles.
+                <br /><br />
                 We at Seguro Soft, leave no stone unturned to make our customers happy. We continuously take your inputs and requirements to produce outstanding software. From startups to MNC’s, our experienced and the dedicated team will help you in building your software by providing a complete solution to your needs.*@
 
-                @*<button class="btn btn-lg btn-primary" id="btnSoftDevReadMore">Read More</button>*@
+                <button class="btn btn-lg btn-primary" id="btnSoftDevReadMore">Read More</button>
             </p>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mg-top" id="softDevHide">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="softDevHide">
             <p>
                 Based upon the client’s requirement, we choose the software development life cycle from various life cycles such as waterfall model, iterative model, and other life cycles.
                 <br /><br />
@@ -51,7 +51,7 @@
             <li>Compatible and reliable software</li>
         </ul>
 
-        @*<a href="#" id="softDevlink"><input type="button" class="btn btn-lg btn-primary" id="btnSoftDevShowLess" value="Show Less"></a>*@
+        <a href="#" id="softDevlink"><input type="button" class="btn btn-lg btn-primary" id="btnSoftDevShowLess" value="Show Less"></a>
 </div>
 
     </div>
@@ -258,18 +258,18 @@
 
 <script>
     $(document).ready(function () {
-        //$('#softDevHide').hide();
-        //$('#btnSoftDevShowLess').hide();
-        //$('#btnSoftDevReadMore').click(function () {
-        //    $('#softDevHide').slideToggle('slow');
-        //    $('#btnSoftDevShowLess').show();
-        //    $('#btnSoftDevReadMore').hide();
-        //});
-        //$('#btnSoftDevShowLess').click(function () {
-        //    $('#softDevHide').hide();
-        //    $('#btnSoftDevShowLess').hide();
-        //    $('#btnSoftDevReadMore').show();
-        //    $('#softDevlink').prop("href", "#dvSoftDev");
-        //});
+        $('#softDevHide').hide();
+        $('#btnSoftDevShowLess').hide();
+        $('#btnSoftDevReadMore').click(function () {
+            $('#softDevHide').slideToggle('slow');
+            $('#btnSoftDevShowLess').show();
+            $('#btnSoftDevReadMore').hide();
+        });
+        $('#btnSoftDevShowLess').click(function () {
+            $('#softDevHide').hide();
+            $('#btnSoftDevShowLess').hide();
+            $('#btnSoftDevReadMore').show();
+            $('#softDevlink').prop("href", "#software-development");
+        });
     });
 </script>

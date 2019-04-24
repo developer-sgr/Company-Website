@@ -22,16 +22,18 @@
 }
 
 @media (min-width:1024px) {
-    .container > .navbar-collapse{
-        margin-right:-50px;
+    .container > .navbar-collapse {
+        margin-right: -50px;
     }
+
     .container > .navbar-header {
         margin-left: -30px;
     }
+
     .nav > li {
         padding: 0px 3px 0px 0px;
     }
-
+}
 @media (max-width: 600px) {
     .navbar-wrapper .navbar {
         text-align: center;
