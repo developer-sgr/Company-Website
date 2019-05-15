@@ -20,6 +20,7 @@ namespace Seguro.Company.Web.Models
         [Required(ErrorMessage="Please enter phone number.")]
         [Display(Name = "Phone")]
         [Phone(ErrorMessage="Please enter a valid phone number.")]
+        [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Please enter a valid phone number")]
         public string Phone { get; set; }
         
         [Required(ErrorMessage="Please enter enquiry subject.")]

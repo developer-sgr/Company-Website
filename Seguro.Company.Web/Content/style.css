@@ -43,9 +43,10 @@ body {
     background: #555555;
     height: 100%;
     font-size: 13px;
+    font-family: 'Helvetica';
 }
 a:hover{text-decoration:none;}
-p{color:#555555;font-size:13px;font-family: 'helveticaneuemedium';}
+p{color:#555555;font-size:13px;font-family: 'Helvetica';}
 
 h3{
 	font-size:30px;
@@ -102,7 +103,7 @@ h3{
   left: 0;  
   
 }
-.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu .dropdown:visited {
 display: block;
 margin-top:-5px !important;
 }
@@ -406,3 +407,20 @@ dd{
 .dv-mg-top{
     margin-top:-10px;
 }
+
+.breadcrumb {
+    font-size:13px;
+    font-family:'Helvetica';
+}
+.btn{
+    font-size:13px;
+}
+
+dl {
+    font-family: 'Helvetica';
+}
+h5 {
+    font-family: 'Helvetica';
+}
+
+

@@ -1081,7 +1081,7 @@ html {
 }
 body {
     font-family: 'helveticaneuemedium',"Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.42857143;
     color: #333;
     background-color: #fff
@@ -3680,7 +3680,7 @@ tbody.collapse.in {
     border: 1px solid rgba(0, 0, 0, .15);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    font-family: 'Source Sans Pro,sans-serif';
+    font-family: 'Helvetica';
 }
 .dropdown-menu.pull-right {
     right: 0;
@@ -4123,7 +4123,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
         display: block;
         padding: 10px 15px;
         text-transform: uppercase;
-        font-family: 'Source Sans Pro,sans-serif';
+        font-family: 'Helvetica';
     }
 .nav>li>a:focus,
 .nav>li>a:hover {
