@@ -328,7 +328,6 @@ ul.arrowul > li i{margin-right:10px;}
 }
 .dropdown-width {
     min-width: 250px !important;
-    /*width:192% !important;*/
     background-color: #313131 !important;
 }
 .dropdown-position{
@@ -341,7 +340,7 @@ ul.arrowul > li i{margin-right:10px;}
     margin: 8px 0px;
     width: 23%;
     height: 38px;
-    //background-color: #2c3133!important;
+    /*background-color: #2c3133!important;*/
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background-color: #286090 !important;

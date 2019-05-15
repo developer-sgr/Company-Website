@@ -1,4 +1,5 @@
 ﻿
+
 <div class="mainbanner">
     <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
         <li>
@@ -18,7 +19,7 @@
                                     <li><img src="~/@Url.Content("images/apple-icon.png")" /></li>
                                     <li><img src="~/@Url.Content("images/windows-icon.png")" /></li>
                                 </ul>
-                                <p><a class="btn btn-lg btn-primary" href="@Url.Action("Index","Services")" role="button">Read More <i class="fa fa-angle-right"></i></a></p>
+                                <a class="btn btn-lg btn-primary" href="@Url.Action("Index","Services")" role="button">Read More <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -190,12 +191,12 @@
         });
     });
 </script>
-<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script>
+@*<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>*@
 <script>
     $(function () {
-        window.prettyPrint && prettyPrint()
+        window.prettyPrint && prettyPrint();
         $(document).on('click', '.yamm .dropdown-menu', function (e) {
             e.stopPropagation()
-        })
+        });
     })
 </script>
