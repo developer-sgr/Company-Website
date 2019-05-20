@@ -327,7 +327,7 @@ ul.arrowul > li i{margin-right:10px;}
     color:red;
 }
 .dropdown-width {
-    min-width: 250px !important;
+    min-width: 260px !important;
     background-color: #313131 !important;
 }
 .dropdown-position{
@@ -421,5 +421,18 @@ dl {
 h5 {
     font-family: 'Helvetica';
 }
+.dv-overflow{
+    overflow:hidden;
+}
 
+.fadein, .fadeout {
+    opacity: 0;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
 
+.fadein {
+    opacity: 1;
+}

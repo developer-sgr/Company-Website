@@ -81,7 +81,7 @@
             </dd>
         </dl>*@
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="dvEcommerceHide">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dv-overflow" id="dvEcommerceHide">
             <h5><strong>Why choose us?</strong></h5>
            
                 <dl>
@@ -170,7 +170,7 @@
             </p>
         </div>
 
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="dvCIhide">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dv-overflow" id="dvCIhide">
 
             <h5><strong>Why choose us?</strong></h5>
             <p>Infrastructure services across platforms and sectors. We have established our credentials with more than 1000 enterprises.</p>
@@ -255,70 +255,70 @@
                 <button class="btn btn-lg btn-primary" id="btnCrmReadMore">Read More</button>
             </p>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="dvCrmHide">
-          
-                <dl>
-                    <dt>Plug ‘n’ Play :</dt>
-                    <dd>
-                        We understand that no two businesses can be the same and hence our solution is customizable at the click of a button to suit your needs and preferences.
-                    </dd>
-                    <dt>User-Friendly Solution :</dt>
-                    <dd>
-                        Our solution is easy to use and master. It caters to your team as well the leadership. We believe that if the solution is easy to understand then it will be easy to onboard its users too.
-                    </dd>
-                    <dt> Cloud-Based Solution :</dt>
-                    <dd>
-                        To give you an economical CRM solution, we have developed our solution in the cloud. This allows to quickly set up your CRM and access it from any device.
-                    </dd>
-                </dl>
-        
+      
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dv-overflow" id="dvCrmHide">
+            <dl>
+                <dt>Plug ‘n’ Play :</dt>
+                <dd>
+                    We understand that no two businesses can be the same and hence our solution is customizable at the click of a button to suit your needs and preferences.
+                </dd>
+                <dt>User-Friendly Solution :</dt>
+                <dd>
+                    Our solution is easy to use and master. It caters to your team as well the leadership. We believe that if the solution is easy to understand then it will be easy to onboard its users too.
+                </dd>
+                <dt> Cloud-Based Solution :</dt>
+                <dd>
+                    To give you an economical CRM solution, we have developed our solution in the cloud. This allows to quickly set up your CRM and access it from any device.
+                </dd>
+            </dl>
+
             <h5><strong> Benefits of Availing our Services </strong></h5>
-          
-                <dl>
-                    <dd>
-                        Seguro Soft has built a solution with multi-fold benefits to the entire sales and marketing team. The solution not only allows for effective management but also determines the way ahead for the sales and marketing process.
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>Sales Management</dt>
-                </dl>
-                <ul class="li-fontSize">
-                    <li> Lead Routing & Opportunity Management </li>
-                    <li> Lead & Opportunity Analytics</li>
-                    <li> Customer Info & History</li>
-                    <li> Contact Management</li>
-                    <li> Accurate forecasting</li>
-                </ul>
 
-             
-                <dl>
-                    <dt> Marketing Automation</dt>
-                </dl>
-                <ul class="li-fontSize">
-                    <li>Marketing Strategy </li>
-                    <li>Analyze Trend & Behavior </li>
-                    <li> Business Intelligence</li>
-                    <li> Campaign Management</li>
-                </ul>
+            <dl>
+                <dd>
+                    Seguro Soft has built a solution with multi-fold benefits to the entire sales and marketing team. The solution not only allows for effective management but also determines the way ahead for the sales and marketing process.
+                </dd>
+            </dl>
+            <dl>
+                <dt>Sales Management</dt>
+            </dl>
+            <ul class="li-fontSize">
+                <li> Lead Routing & Opportunity Management </li>
+                <li> Lead & Opportunity Analytics</li>
+                <li> Customer Info & History</li>
+                <li> Contact Management</li>
+                <li> Accurate forecasting</li>
+            </ul>
 
-                <dl>
-                    <dt>Support & Community Management</dt>
-                </dl>
-                <ul class="li-fontSize">
-                    <li>Support Ticketing </li>
-                    <li>3rd Party Integration </li>
-                    <li> Call Center & VoIP Integration</li>
-                </ul>
-                <dl>
-                    <dt>Team Collaboration</dt>
-                </dl>
-                <ul class="li-fontSize">
-                    <li> Boost Productivity</li>
-                    <li>In-sync coordination</li>
-                    <li>Outstanding customer experience</li>
-                    <li>Effective Data Management</li>
-                </ul>
-           
+
+            <dl>
+                <dt> Marketing Automation</dt>
+            </dl>
+            <ul class="li-fontSize">
+                <li>Marketing Strategy </li>
+                <li>Analyze Trend & Behavior </li>
+                <li> Business Intelligence</li>
+                <li> Campaign Management</li>
+            </ul>
+
+            <dl>
+                <dt>Support & Community Management</dt>
+            </dl>
+            <ul class="li-fontSize">
+                <li>Support Ticketing </li>
+                <li>3rd Party Integration </li>
+                <li> Call Center & VoIP Integration</li>
+            </ul>
+            <dl>
+                <dt>Team Collaboration</dt>
+            </dl>
+            <ul class="li-fontSize">
+                <li> Boost Productivity</li>
+                <li>In-sync coordination</li>
+                <li>Outstanding customer experience</li>
+                <li>Effective Data Management</li>
+            </ul>
+
             <a href="#" id="crmlink"><input type="button" class="btn btn-lg btn-primary" id="btnCrmShowLess" value="Show Less"></a>
         </div>
 
@@ -394,10 +394,11 @@
         });
 
         $('#btnCrmReadMore').click(function () {
-            $('#dvCrmHide').slideToggle("slow");
+            $('#dvCrmHide').slideDown("slow");
             $('#btnCrmReadMore').hide();
             $('#btnCrmShowLess').show();
         });
+       
         $('#btnCrmShowLess').click(function () {
             $('#dvCrmHide').hide();
             $('#btnCrmReadMore').show();
