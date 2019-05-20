@@ -342,26 +342,6 @@
 <script>
     $(document).ready(function () {
 
-        @*var url = "@Model.UrlKeyword";
-        if (url == 'Ecommerce') {
-            //$(window).scrollTop($('#dvEcommerce').position().top - 20);
-            //$('div#' + dvEcommerce)[0].scrollIntoView();
-            //$('#dvEcommerce').scrollIntoView(true);
-            //$("#dvEcommerce").scrollIntoView({
-            //    duration: true,
-            //    easing: 'easeOutExpo',
-            //    complete: $.noop(),
-            //    step: $.noop(),
-            //    queue: false,
-            //    specialEasing: null
-            //});
-            //document.getElementById("view" + dvEcommerce).scrollIntoView({ behavior: "smooth" });
-            //window.location.hash = "view" + dvEcommerce;
-            //var elmnt = document.getElementById("dvEcommerce");
-            //elmnt.scrollIntoView();
-            $("#dvEcommerce").scrollIntoView(true);
-        }*@
-
         $("#dvEcommerceHide").hide();
         $('#btnEcommerceShowLess').hide();
         $('#dvCIhide').hide();
@@ -394,7 +374,7 @@
         });
 
         $('#btnCrmReadMore').click(function () {
-            $('#dvCrmHide').slideDown("slow");
+            $('#dvCrmHide').slideToggle("slow");
             $('#btnCrmReadMore').hide();
             $('#btnCrmShowLess').show();
         });

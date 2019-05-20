@@ -132,31 +132,6 @@
     .navbar-inverse .navbar-nav > .active > a:hover {
         background: none;
     }
-        /*.navbar-inverse .navbar-collapse {
-        padding: 0 15px;
-        border: none;
-        box-shadow: none;
-        width: 100%;
-        float: none;
-        display: inline-block;
-    }
-    .navbar-collapse.collapse {
-        overflow:hidden;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-
-    .navbar-header {
-        width: 100%;
-    }
-
-    .navbar-nav {
-        margin: 7.5px -15px;
-        background: rgba(0, 0, 0, 0.86);
-        margin: 0;
-        background-color: #333;
-    }*/
         .navbar-header {
         float: none;
     }
@@ -197,6 +172,9 @@
     }
     .collapse.in {
         display: block !important;
+    }
+    .lSSlideOuter {
+        top: -50px;
     }
 }
 @media (max-width:720px){
@@ -256,6 +234,7 @@
         border: 0;
         border-top: 0px solid #eee !important;
     }
+    .lSSlideOuter {top:-35px;}
 }
 @media (max-width:600px){	
 	

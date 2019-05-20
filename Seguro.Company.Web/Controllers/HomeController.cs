@@ -8,10 +8,6 @@ namespace Seguro.Company.Web.Controllers
 {
     public class HomeController : BaseController
     {
-        public HomeController()
-        {
-            ViewBag.PageCssClass = "";
-        }
         public ActionResult Index()
         {
             return View();
